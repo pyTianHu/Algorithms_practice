@@ -6,7 +6,7 @@ class Stack:
         self.items = []
 
     def isempty(self):
-        return not self.items #Ez azért működik, mert egy üres lista automatikusan False-ra értékelődik pythonban
+        return not self.items #Empty list = False
     
     def push(self, item):
         self.items.append(item)
