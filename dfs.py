@@ -1,4 +1,4 @@
-from BFS import Stack
+from Algorithms_prac import Stack
 from matrixes import matrixNames,simple_sixbysix, obstacle_sixbysix
 from helperfunctions import offsets,positionChecker,pathTracker
 
