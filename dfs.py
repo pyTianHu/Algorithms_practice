@@ -2,6 +2,13 @@ from Algorithms_prac import Stack
 from matrixes import matrixNames,simple_sixbysix, obstacle_sixbysix
 from helperfunctions import offsets,positionChecker,pathTracker
 
+#Working with stack
+#Pushing start position into the stack
+#Assigning current position and check if current position == goal
+# if yes => return path
+# if no =>  get direction offsets and assign neighboring cell alues
+           #if the neighboring cell values are valid, and they are not already checked (predecessors) push them to stack #in the matrix range, not obstacles, not walls (#)
+
 def dfs(matrix,start,goal):
     stack = Stack()
     stack.push(start)
