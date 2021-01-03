@@ -13,8 +13,8 @@ def dfs(matrix,start,goal):
         if currentCell == goal:
             return pathTracker(predecessors, start, goal)
         for direction in ["right","left","up","down"]:
-            row_offset, col_offset = offsets[direction]
-            neighbor = (currentCell[0]+row_offset) , (currentCell[1] + col_offset)
+            rowOffset, colOffset = offsets[direction]
+            neighbor = (currentCell[0]+rowOffset) , (currentCell[1] + colOffset)
             #print(currentCell,neighbor) - mükszik a positiontjek funkció
             if positionChecker(matrix, neighbor) and neighbor not in predecessors:
                 stack.push(neighbor)
